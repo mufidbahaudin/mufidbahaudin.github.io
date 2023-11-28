@@ -14,3 +14,29 @@ section {
 a {
     text-decoration: none;
 }
+
+.myname {
+    position: relative;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.teks {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .6);
+}
+
+.hover-teks {
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    color: var(--clr);
+    overflow: hidden;
+    border-right: 6px solid var(--clr);
+    transition: .5s ease-in-out;
+}
+
+.myname:hover .hover-teks {
+    width: 100%;
+    filter: drop-shadow(0 0 40px var(--clr));
+}
